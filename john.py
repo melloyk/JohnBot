@@ -14,9 +14,9 @@ client = discord.Client(intents=intents)
 
 @client.event
 async def on_ready():
-    for guild in client.guild:
-        print(f'{client.user} is connected to the following guild:\n')
-        print(f'{guild.name}(id: {guild.id})')
+	for guild in client.guild:
+		print(f'{client.user} is connected to the following guild:\n')
+		print(f'{guild.name}(id: {guild.id})')
 
 	print(f'{client.user} has connected to Discord!')
 
