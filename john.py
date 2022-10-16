@@ -5,9 +5,9 @@ from dotenv import load_dotenv
 
 load_dotenv()
 TOKEN = os.getenv('JOHN_TOKEN')
+GUILD = os.getenv('GUILD')
 
 intents = discord.Intents.all()
-intents.members = False
 intents.presences = False
 
 client = discord.Client(intents=intents)
